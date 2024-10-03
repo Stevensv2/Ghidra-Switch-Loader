@@ -29,7 +29,7 @@ jobs:
       - uses: er28-0652/setup-ghidra@master
         with:
           version: ${{ matrix.ghidra }}
-      - uses: eskatos/gradle-command-action@v3
+      - uses: eskatos/gradle-command-action@v4
         with:
           gradle-version: 8.10.2
           arguments: -PGHIDRA_INSTALL_DIR=${{ env.GHIDRA_INSTALL_DIR }}
